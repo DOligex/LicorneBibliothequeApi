@@ -1,4 +1,5 @@
-import express, { Router, Request, Response, Application } from 'express';
+import { commonController } from './../core/common_functions.controller';
+import express, { Application, Router, Request, Response } from 'express';
 import { UserService } from '../services/user.service';
 
 /**
@@ -10,17 +11,12 @@ import { UserService } from '../services/user.service';
  */
 export const UserController = (app: Application) => {
 
-    const userRouter: Router = express.Router();
-    const userService = new UserService();
+  const userService = new UserService();
 
-    userRouter.get('/', async (req: Request, res: Response) => {
-        res.send(await userService.getAll());
-    });
+  let userRouter = Router();
 
-    userRouter.post('/', async (req: Request, res: Response) => {
-        const user = req.body;
-        res.send(await userService.create(user));
-    });
+  userRouter = commonController(userService, userRouter);
 
-    app.use('/users', userRouter);
+  app.use('/users', userRouter);
+
 };
