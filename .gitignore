@@ -62,3 +62,9 @@ typings/
 
 # next.js build output
 .next
+
+# database
+database/
+
+# core files
+core/typeorm.ts
