@@ -22,8 +22,8 @@ export class Movie {
     title!: string;
 
     // date de sortie
-    @Column({type: 'timestamp'})
-    released!: Date;
+    @Column({type: 'varchar'})
+    released!: string;
 
     // durée
     @Column({type: 'int'})
@@ -52,7 +52,7 @@ export class Movie {
     awards!: string;
 
     // studio
-    @Column({type: 'varchar', length: 25})
+    @Column({type: 'varchar', length: 100})
     production!: string;
 
     // booléen de réserve
@@ -73,6 +73,9 @@ export class Movie {
     // modération adultes
     @Column({type: 'boolean', default: false})
     warning!: boolean;
+
+    @Column({type: 'varchar', length: 255})
+    trailer!: string;
 
     @ManyToOne(type => Year, year => year.movies)
     years!: Year;

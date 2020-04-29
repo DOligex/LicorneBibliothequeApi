@@ -28,6 +28,9 @@ export class Actor {
     @CreateDateColumn({type: 'timestamp'})
     birthdate!: Date;
 
+    @Column({type: 'varchar', length: 20})
+    nationality!: string;
+
     @Column({type: 'varchar', length: 75})
     citation!: string;
 
