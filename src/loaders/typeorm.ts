@@ -1,6 +1,9 @@
+import { Genre } from './../entity/genre.entity';
+import { Year } from './../entity/year.entity';
+import { Actor } from './../entity/actor.entity';
 import { Movie } from '../entity/movie.entity';
-import { createConnection } from 'typeorm';
 import { User } from '../entity/user.entity';
+import { createConnection } from 'typeorm';
 
 export default async () => {
 
@@ -13,8 +16,11 @@ await createConnection({
     // database: process.env.UNICORN_API_DATABASE, // 'unicorn_library'
     database: 'unicorn_library',
     entities: [
-        User,
+        Actor,
+        Genre,
         Movie,
+        User,
+        Year,
     ],
     synchronize: true,
     logging: false,
