@@ -18,7 +18,7 @@ It was generated with [Angular CLI](https://github.com/angular/angular-cli) vers
 <img src="https://raw.githubusercontent.com/devicons/devicon/0d6c64dbbf311879f7d563bfc3ccf559f9ed111c/icons/github/github-original.svg" title="Github" alt="github logo" width="30" height="30"/> 
 <img src="https://raw.githubusercontent.com/devicons/devicon/0d6c64dbbf311879f7d563bfc3ccf559f9ed111c/icons/git/git-original.svg" title="Git" alt="git logo" width="30" height="30"/> 
 <img src="https://devicons.github.io/devicon/devicon.git/icons/mysql/mysql-original-wordmark.svg" title="MySQL" alt="MySQL logo" width="30" height="30"/>
-<img src="https://raw.githubusercontent.com/DOligex/devIcons/c7399b7aa0823661e4eedf4879caf61e41680c43/postman.svg?token=AMIZFZRA4T2DDV4NDVXJKZ27G35WS" title="Postman" alt="Postman logo" width="30">
+<img src="https://raw.githubusercontent.com/DOligex/devIcons/565d64c36c51fe277b4890b3a4c1f17686355123/postman.svg" title="Postman" alt="Postman logo" width="30" height="30" />
 <img src="https://raw.githubusercontent.com/devicons/devicon/0d6c64dbbf311879f7d563bfc3ccf559f9ed111c/icons/apple/apple-original.svg" title="Mac" alt="Apple logo" width="30" height="30"/>
 <img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/36c6d3ef63c06fe942b62da9303b559d8b4535b3/icons/vscode.svg" title="VSCode" alt="VSCode logo" width="30" height="30"/>
 </p>
